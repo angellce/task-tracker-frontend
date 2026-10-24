@@ -40,3 +40,13 @@ export async function request(path, { method = 'GET', body } = {}) {
   }
   return data
 }
+
+// [{ field: 'title', message: 'must not be blank' }] -> { title: 'must not be blank' }
+// (several messages for the same field are joined with a comma)
+export function fieldErrorsByName(err) {
+  const byField = {}
+  for (const fe of err.fieldErrors) {
+    byField[fe.field] = byField[fe.field] ? `${byField[fe.field]}, ${fe.message}` : fe.message
+  }
+  return byField
+}

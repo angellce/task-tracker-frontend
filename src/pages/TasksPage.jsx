@@ -98,6 +98,9 @@ function TasksPage() {
     <section>
       <Link to="/projects">← Back to projects</Link>
       <h1>{project ? project.name : 'Loading project...'}</h1>
+      <Link className="button-link" to={`/projects/${projectId}/tasks/new`}>
+        New task
+      </Link>
 
       <StatusFilter value={status} onChange={handleStatusChange} />
       {deleteError && <p className="error">{deleteError}</p>}

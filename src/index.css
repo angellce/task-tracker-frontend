@@ -148,3 +148,29 @@ button:disabled {
 .task-table th {
   background: #f0f2f5;
 }
+
+.form select {
+  padding: 6px 8px;
+  font: inherit;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.button-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  color: #fff;
+  text-decoration: none;
+  background: #2b3a55;
+  border-radius: 4px;
+}
+
+.row-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
