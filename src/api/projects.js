@@ -11,3 +11,7 @@ export function createProject({ name, description }) {
     body: { name, description: description || null },
   })
 }
+
+export function getProject(id) {
+  return request(`/api/projects/${id}`)
+}

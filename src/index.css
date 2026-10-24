@@ -118,3 +118,33 @@ button:disabled {
   align-items: center;
   gap: 12px;
 }
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter select {
+  padding: 4px 8px;
+  font: inherit;
+}
+
+.task-table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.task-table th,
+.task-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+  background: #f0f2f5;
+}
