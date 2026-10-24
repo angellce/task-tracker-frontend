@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background: #fafafa;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 24px;
+  background: #2b3a55;
+}
+
+.navbar-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar a {
+  color: #cdd6e8;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
